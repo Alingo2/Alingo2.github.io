@@ -1,0 +1,116 @@
+html
+{
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.3;
+}
+body
+{
+    max-width: 800px;
+    margin: 0 auto;
+}
+img
+{
+    width:100px;
+    height: 100px;
+}
+pre
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    color: rgba(226, 219, 219, 0.8)
+}
+p
+{
+    background: rgba(133, 117, 117, 0.5);
+    border: 2px solid grey;
+    color: black;
+    font-family: sans-serif;
+
+}
+abbr
+{
+    text-decoration:none;
+}
+h1,h2,footer
+{
+    background-color: rgba(182, 182, 182, 0.2);
+    border: 2px solid grey;
+}
+button
+{
+    background: grey;
+}
+.normal
+{
+    border: 2px solid rgb(25, 143, 253);
+}
+.normal.bold,
+footer
+{
+    text-decoration: line-through;
+}
+
+.bold
+{
+    font-weight: 900;
+}
+
+#logo
+{
+    color: #000;
+    font: italic;
+}
+
+[type="text"]
+{
+    border: 2px dashed #000;
+}
+
+input[type="text"]
+{
+    color: tomato;
+    padding: 5px;
+}
+
+a:link
+{
+    color: tomato;
+}
+a:visited
+{
+    color: grey;
+}
+button:hover, 
+a:hover
+{
+    background-color: #eee;
+}
+
+button:active, 
+a:active
+{
+    background: rgb(22, 22, 22);
+    color:#fff;
+}
+
+input:focus
+{
+    outline:none;
+    background: #aaa;
+}
+
+p:first-letter
+{
+    font-size: 50px;
+}
+
+.bold:after
+{
+    content: "🏴";
+}
+
+.container-small
+{
+    max-width: 500px;
+}

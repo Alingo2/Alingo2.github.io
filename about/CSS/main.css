@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+body
+{
+    background: #454545;
+    line-height: 1.7;
+}
+
+a
+{
+    text-decoration: none;
+}
+a, body
+{
+    color: #eee;
+}
+
+.side-bar
+{
+    float:  left;
+    width:  20%;
+    position: fixed;
+}
+
+.portrait img
+{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    left: 35px;
+}
+.side-bar > * 
+{
+    padding: 10px 15px;
+}
+
+.side-bar .nav a,
+.side-bar .tag-list a
+{
+    display: block;     /*占一整行*/
+    padding: 5px;
+    color: #888;
+    transition: color 500ms;
+}
+.side-bar .nav a:hover,
+.side-bar .tag-list a:hover
+{
+    color: #eee;
+    font-weight: 600;
+}
+
+.side-bar .nav a
+{
+    font-weight: 700;
+}
+
+.main
+{
+    float: right;
+    width: 80%;
+    color: #454545;
+}
+
+.nav
+{
+    display: block;
+}
+.header .logo
+{
+    line-height: 1;
+    border: 5px solid #eee;
+    padding: 10px 20px;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: rgba(238, 238, 238, 0.555);
+    transition: color 400ms;
+}
+.header .logo:hover
+{
+    color:#fff;
+    text-decoration: underline;
+}
+.article-list, .article
+{
+    background: #fff;
+    margin-right: 30%;
+    padding: 20px 30px;
+    box-shadow: 0 0 3px 2px rgba(0,0,0,0.2);
+}
+
+.article-list .item
+{
+    margin-bottom: 25px;
+}
+
+.article .title
+{
+    display: block;
+    text-align: center;
+}
+.article-list .item .title,
+.article .title
+{
+    color: #454545;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.article-list .item .status,
+.article .status
+{
+    font-size: 17px;
+    color: #ccc;
+    margin-top: 0px; 
+}
+.article .status
+{
+    text-align: center;
+}
+.article-list .item > *,
+.article > *
+{
+    margin: 10px 0;
+}
+
+.content a
+{
+    color: #555;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#menu-checkbox,
+#menu-toggle
+{
+    display: none;
+}
+
+footer
+{
+    margin-right: 30%;
+    text-align: center;
+    padding: 10px;
+    color: #eee;
+}
+
+#jump
+{
+    width: 120px;
+    text-align: center;
+}
+
+.pager > a,
+.pager > label
+{
+    color:#444;
+    transition: color 400ms;
+}
+
+.pager a:hover,
+.content a:hover,
+.pager > label:hover
+{
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+}
+.article-list .item .title:hover
+{
+    text-decoration: none;
+    color: #888;
+}
+.pager
+{
+    text-align: center;
+    padding: 0 0 0 0;
+    margin-bottom: 0px;
+}
+.content a:hover
+{
+    color: #999;
+}
+
+.nav a:hover,
+.tag-list a:hover
+{
+    text-decoration: none;
+}
+
+.content
+{
+    font-size: 18px;
+}
+
+.active
+{
+    color: #eee !important;
+}
+
+#logo-actives
+{
+    color:#fff;
+    text-decoration: underline;
+}
+
+#trigger{
+    background-color: #454545;
+    border-radius: 17px;
+}
+
+#jump-trigger{
+    background-color: #fff;
+    border-radius: 18px;
+    width: 40px;
+    height: 40px;
+}
+.nobigger{
+    max-width: 110%;
+}
