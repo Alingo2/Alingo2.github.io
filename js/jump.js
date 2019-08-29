@@ -1,0 +1,1 @@
+window.location.href="about/index.html";
