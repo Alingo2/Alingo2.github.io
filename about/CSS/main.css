@@ -22,7 +22,6 @@ a, body
     width:  20%;
     position: fixed;
 }
-
 .portrait img
 {
     width:70px;
@@ -226,4 +225,9 @@ footer
 }
 .poisioning{
     text-align: left;
+}
+.subtitle{
+    background: #454545;
+    color: #eee;
+    font-size: 25px;
 }

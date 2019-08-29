@@ -45,7 +45,7 @@
                 <h1 class="title">1.搭建个人博客</h1>
                 <div class="status">
                     <span class="badge badge-danger"> 发布于:2019-7-27 </span>
-                    <span class="badge badge-warning"> 阅读:3500 </span>
+                    <span class="badge badge-warning"> 阅读: <div class="read" style="display: inline"></div> </span>
                     <span class="badge badge-success"> 标签:#排坑 </span>
                 </div>
                 <div class="content">
@@ -60,31 +60,42 @@
                         <a href="#PassageOnePartFive">5. 将hexo主页直接跳转到自己的html网页上</a><br>
                     </div>
                         <div class="poisioning pager" id="PassageOnePartOne">
-                            <div>
+                            <div class="subtitle">
                                 1. 前置工作                            
                             </div>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt atque dicta modi numquam dolorem nisi optio sed sit. Veritatis, voluptates repudiandae dolores officia consectetur optio nulla consequuntur magni! Eius!
+                            首先，你需要准备好1个github账号，并在电脑上安装完成 node.js<br>
+                            Next,在github上新建一个名为 你的用户名.github.io的仓库，比如说，如果我的github用户名是Alingo2，那么你就新建ALingo2.github.io的仓库（必须是你的用户名，其它名称无效）
                         </div>
                         <div class="poisioning pager" id="PassageOnePartTwo">
-                            <div>
+                            <div class="subtitle">
                                 2. 配置hexo                    
                             </div>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt atque dicta modi numquam dolorem nisi optio sed sit. Veritatis, voluptates repudiandae dolores officia consectetur optio nulla consequuntur magni! Eius!
+                            第一步完成了~恭喜<br>
+                            现在，对于windows系统，打开命令提示符，键入以下指令：npm install -g hexo<br>
+                            (也就是利用npm帮你在全局中配置hexo)<br>
+                            然后，在电脑中选择一个你喜欢的位置建一个文件夹，然后cd进入该文件的目录，在终端键入指令：hexo init<br>
+                            (也就是hexo帮你进行初始化)<br>
+                            初始化完成后，键入指令：hexo g<br>
+                            (g代表generate，hexo会帮你渲染文件)<br>
+                            再键入：hexo s<br>
+                            (s代表server，hexo会开启本地预览服务)<br>
+                            复制给出的地址http://localhost:4000到浏览器,你应该会惊喜地发现有东西啦！这是hexo帮你生成的一篇HelloWorld文章<br>
+                            Ctrl + C 退出本地服务，接下来我们就可以把它推到远端github仓库了！
                         </div>
                         <div class="poisioning pager" id="PassageOnePartThree">
-                            <div>
+                            <div class="subtitle">
                                 3.修改主题
                             </div>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iure repellat laboriosam sapiente cumque necessitatibus, illum consectetur earum magnam facilis ad eos incidunt impedit. Maxime quo ad ut possimus sequi.
                         </div>
                         <div class="poisioning pager" id="PassageOnePartFour">
-                            <div>
+                            <div class="subtitle">
                                 4.上传自己的html js css文件
                             </div>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt fugit dolorem nihil consectetur quam, alias perspiciatis soluta harum non, nostrum modi mollitia consequatur itaque assumenda voluptate asperiores eaque illum est!
                         </div>
                         <div class="poisioning pager" id="PassageOnePartFive">
-                            <div>
+                            <div class="subtitle">
                                 5. 将hexo主页直接跳转到自己的html网页上
                             </div>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, totam, at consectetur quas quo odio minus obcaecati laboriosam delectus voluptate facilis. Iste mollitia, fugit quasi cupiditate doloribus neque reiciendis tempora.
@@ -106,17 +117,11 @@
         <footer>
             <div id="show"></div>
             <div>
+                Good morning , Good afernoon , Good evening !
+            </div>
+            <div>
                 珍惜生命！远离浪费
-            </div>
-            <div>
-                Good morning ,
-            </div>
-            <div>
-                Good afernoon ,
-            </div>
-            <div>
-                Good evening !
-            </div>   
+            </div> 
         </footer>
     </div>
     <script src="jQuery.js"></script>
