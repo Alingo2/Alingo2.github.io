@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" media="(max-width: 821px)" href="CSS/mobile.css">
     <title>Alingo's article</title>
+    <link rel="icon" href="img/portait.png" type="image/x-icon"/>
 </head>
 <body>
     <div class="side-bar">
@@ -35,7 +36,7 @@
         </div>
         <div class="tag-list">
                 <a href="share.html" class="item">实用工具分享</a>
-                <a href="#" class="item">???</a>
+                <a href="#" class="item">烂笔头</a>
                 <a href="article.html" class="item">踩过的坑</a>
         </div>
     </div>
@@ -45,7 +46,11 @@
                 <h1 class="title">1.搭建个人博客</h1>
                 <div class="status">
                     <span class="badge badge-danger"> 发布于:2019-7-27 </span>
-                    <span class="badge badge-warning"> 阅读: <div class="read" style="display: inline"></div> </span>
+                    <span class="badge badge-warning"> 阅读: 
+                        <span id="busuanzi_container_page_pv">
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
                     <span class="badge badge-success"> 标签:#排坑 </span>
                 </div>
                 <div class="content">
@@ -61,44 +66,121 @@
                     </div>
                         <div class="poisioning pager" id="PassageOnePartOne">
                             <div class="subtitle">
-                                1. 前置工作                            
+                                &nbsp;1. 前置工作                            
                             </div>
                             首先，你需要准备好1个github账号，并在电脑上安装完成 node.js<br>
                             Next,在github上新建一个名为 你的用户名.github.io的仓库，比如说，如果我的github用户名是Alingo2，那么你就新建ALingo2.github.io的仓库（必须是你的用户名，其它名称无效）
                         </div>
                         <div class="poisioning pager" id="PassageOnePartTwo">
                             <div class="subtitle">
-                                2. 配置hexo                    
+                                &nbsp;2. 配置hexo                    
                             </div>
                             第一步完成了~恭喜<br>
                             现在，对于windows系统，打开命令提示符，键入以下指令：npm install -g hexo<br>
                             (也就是利用npm帮你在全局中配置hexo)<br>
                             然后，在电脑中选择一个你喜欢的位置建一个文件夹，然后cd进入该文件的目录，在终端键入指令：hexo init<br>
                             (也就是hexo帮你进行初始化)<br>
-                            初始化完成后，键入指令：hexo g<br>
+                            初始化完成后，键入指令：
+                            <div class="code"> &nbsp; hexo g</div>
                             (g代表generate，hexo会帮你渲染文件)<br>
-                            再键入：hexo s<br>
+                            再键入:
+                            <div class="code">&nbsp; hexo s</div>
                             (s代表server，hexo会开启本地预览服务)<br>
                             复制给出的地址http://localhost:4000到浏览器,你应该会惊喜地发现有东西啦！这是hexo帮你生成的一篇HelloWorld文章<br>
                             Ctrl + C 退出本地服务，接下来我们就可以把它推到远端github仓库了！
+                            打开你创建的文件夹，然后用文本编辑器打开站点配置文件 _config.yml，翻到最后，修改为
+                            deploy:<br>
+                            type: git<br>
+                            repo: https://github.com/YourgithubName/YourgithubName.github.io.git<br>
+                            branch: master<br>
+                            (YourgithubName就是你的GitHub账户)
+                            这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。<br>
+                            在cmd中键入指令: npm install hexo-deployer-git --save<br>
+                            然后键入：<br>
+                            <div class="code">
+                                &nbsp; hexo clean<br>
+                                &nbsp; hexo g<br>
+                                &nbsp; hexo d
+                            </div>
+                            注意deploy时可能要你输入username和password。过一会儿就可以在http://yourname.github.io 这个网站看到你的博客了！！
                         </div>
                         <div class="poisioning pager" id="PassageOnePartThree">
                             <div class="subtitle">
-                                3.修改主题
+                                &nbsp;3.修改主题
                             </div>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iure repellat laboriosam sapiente cumque necessitatibus, illum consectetur earum magnam facilis ad eos incidunt impedit. Maxime quo ad ut possimus sequi.
+                            你可能不太喜欢现在这个大地球矬矬的亚子╮(╯▽╰)╭，没关系，hexo的优点之一就是有很多别人写好的主题，只需要自己更换就好啦
+                            第一步当然是你需要去下载你需要的主题，下边以 NexT 主题为例，<br>
+                            在cmd中键入指令：
+                            <div class="code">
+                                &nbsp; cd 博客存放的目录  <br>
+                                &nbsp; git clone https://github.com/iissnan/hexo-theme-next themes/next
+                            </div>
+                            克隆完成后，打开 _config.yml 文件，将主题修改为 next： <br>
+                            theme: next <br>
+                            然后 依然是那三板斧：<br>
+                            hexo clean <br>
+                            hexo g <br>
+                            hexo s <br>
+                            确认本地服务器没问题之后，退出，推到远端 <br>
+                            <div class="code">
+                                &nbsp; hexo d
+                            </div>
+                            恭喜你！大功告成啦！
                         </div>
                         <div class="poisioning pager" id="PassageOnePartFour">
                             <div class="subtitle">
-                                4.上传自己的html js css文件
+                                &nbsp;4.上传自己的html js css文件
                             </div>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt fugit dolorem nihil consectetur quam, alias perspiciatis soluta harum non, nostrum modi mollitia consequatur itaque assumenda voluptate asperiores eaque illum est!
+                            虽然hexo模板众多，也可以修改模板的css文件，但如果你想完全自己动手又怎么办呢？<br>
+                            我在接触到hexo的时候就很想把自己的文件传上去，在尝试过程中还是遇到了一些坑，但终归还是实现啦(开森(*￣▽￣*)ブ) <br>
+                            首先我们在Hexo的source文件夹下新建一个你自己的文件夹，比如我取名为 'about' <br>
+                            然后，我们要知道我们打开的html网页其实是hexo帮你把你写好的markdown文章渲染出来的，那么我就需要阻止hexo渲染你自己的文件 <br>
+                            这里介绍一种官方文档给出的方法：<br>
+                            使用文本编辑器打开 你的Hexo 目录下的_config.yml 文件，找到 skip_render项 <br>
+                            修改成：
+                            <div class="code">
+                                &nbsp; skip_render: '你的文件夹/**'
+                            </div>
+                            其中，'你的文件夹'用你自己的文件夹替代，'/**代表skip跳过渲染该文件夹下所有文件及子目录'(如果有另外的需求可以去查一下hexo skip_render规则)
+                            例如，我就填入的'about/**' <br>
+                            好了，现在我们就可以大胆地把js css html等等文件都放进去了~ <br>
+                            下一步，已经有了网页了，现在我们需要将我们的网页链接到hexo生成的主页上去 <br>
+                            找到theme目录，用文本编辑器打开你之前配置的主题文件夹中的_config.yml文件，在menu那一栏下添加：about: /about/index.html
+                            (因为我添加的文件夹名为about,我需要链接的网页为index.html) <br>
+                            添加完成后，老规矩，三板斧: <br>
+                            hexo clean <br>
+                            hexo g <br>
+                            hexo s <br>
+                            打开本地的localhost，你就会发现侧栏多出了about的标签，点击就能进入你自己的网页啦！<br>
+                            如果没有问题,再键入: <br>
+                            hexo d <br>
+                            推到远端，就能让别人也登录你的网站啦！
                         </div>
                         <div class="poisioning pager" id="PassageOnePartFive">
                             <div class="subtitle">
-                                5. 将hexo主页直接跳转到自己的html网页上
+                                &nbsp;5. 将hexo主页直接跳转到自己的html网页上
                             </div>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, totam, at consectetur quas quo odio minus obcaecati laboriosam delectus voluptate facilis. Iste mollitia, fugit quasi cupiditate doloribus neque reiciendis tempora.
+                            如果已经成功做完之前步骤的小伙伴还没有开始动手写html可以不做第5步,
+                            可以就把hexo生成的页面当作自己站的首页，稍加修改就可以只利用它来跳转自己我网页。<br>
+                            但因为我自己的网站也已经写好了个人首页，于是我决定直接跳过hexo生成的首页，我这里用了个非官方做法，但好在十分简单：<br>
+                            既然替换或者删掉hexo原本的网页可能很麻烦，那为什么不onload页面就直接跳转呢？<br>
+                            进入hexo文件中的source文件夹，编辑首页的md文件
+                            加入一行代码就行：
+                            <div class="code">
+                                &nbsp; &lt;script type="text/javascript" src="/js/jump.js"> &lt/script&gt;
+                            </div>
+                            而我在js/jump.js中的代码是：
+                            <div class="code">
+                                &nbsp; window.location.href="about/index.html";
+                            </div>
+                            (其中about/index.js是我的网站文件) <br>
+                            注：jump.js应该放在
+                            <div class="code">
+                                &nbsp; 主题名/source/js  路径下！
+                            </div>
+                            这一步完成之后，老规矩先用本地服务器验证一下(还是那三步)，你应该会惊喜地发现进入网站后应该停留了一下然后马上就跳转到了自己的网页
+                            (虽然有点像钓鱼网站的说...不过好歹也实现了完整地搭建自己的原生博客！！！) <br>
+                            恭喜！！！
                         </div >
                 </div>
                 <ul class="pager">
@@ -120,11 +202,12 @@
                 Good morning , Good afernoon , Good evening !
             </div>
             <div>
-                珍惜生命！远离浪费
+                珍惜生命，远离浪费！
             </div> 
         </footer>
     </div>
     <script src="jQuery.js"></script>
     <script src="main.js"></script>
+    <script async src="http://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
 </html>
