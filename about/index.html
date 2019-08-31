@@ -99,6 +99,29 @@
                         <label for="jump-trigger">跳转</label>
                 </div>
             </div> -->
+            <!-- Gitalk 评论 start  -->
+                {% if site.gitalk.enable %}
+                <!-- Link Gitalk 的支持文件  -->
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+                <div id="gitalk-container"></div>
+                    <script type="text/javascript">
+                    var gitalk = new Gitalk({
+
+                    // gitalk的主要参数
+                        clientID: '4f56daafab48733897d8',
+                        clientSecret: '4a0a577ac599fd55c448ad5237aacf51700f13ed',
+                        repo: 'MyBlogComment',
+                        owner: 'Aling2',
+                        admin: ['Aling2'],
+                        id: 'window.location.index.html',
+                    
+                    });
+                    gitalk.render('gitalk-container');
+                </script>
+                {% endif %}
+                <!-- Gitalk end -->
         </div>
         <footer>
             <div id="show"></div>
