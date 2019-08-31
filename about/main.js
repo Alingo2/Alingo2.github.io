@@ -71,3 +71,17 @@ jumpTrigger.on('click',function(){
     }
 })
 })()
+
+var gitalk = new Gitalk({
+    clientID: '4f56daafab48733897d8', //Client ID
+  
+    clientSecret: '4a0a577ac599fd55c448ad5237aacf51700f13ed', //Client Secret
+  
+    repo: 'MyBlogComment',//仓库名称
+    owner: 'Aling2',//仓库拥有者
+    admin: ['Aling2'],
+    id: location.href,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+  
+  gitalk.render('gitalk-container')

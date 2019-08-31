@@ -249,3 +249,8 @@ footer
     display: block;
     font-weight: 600;
 }
+.sm-icon{
+    width: 47px;
+    height: 47px;
+    padding: 5px;
+}
