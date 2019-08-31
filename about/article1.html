@@ -12,23 +12,27 @@
 </head>
 <body>
     <div class="side-bar">
-            <label id="menu-toggle" for="menu-checkbox">菜单
-                    <img class="menuimg" src="img/menu.png" alt="图挂了💀">
+        <label id="menu-toggle" for="menu-checkbox">菜单
+                <img class="menuimg" src="img/menu.png" alt="图挂了💀">
             </label>
-        <input id="menu-checkbox" type="checkbox">        
-        <div class="header">
-            <a href="index.html" class="logo">Alingo</a>
-            <abbr title="一只小菜鸡的博客">
-            <div class="portrait">
-                <img src="img/portait.png" alt="图挂了💀">
-            </div>
-            </abbr>
-            <div class="intro">Now:北邮学生
+            <input id="menu-checkbox" type="checkbox">  
+            <div class="header">
+            <a href="index.html" class="logo" id="logo-active">Alingo</a>
+                <div class="portrait">
+                    <abbr title="一只小菜鸡的博客">
+                    <img src="img/portait.png" alt="图挂了💀">
+                    </abbr>
+                    <div class="visited">访问过的小伙伴:</div>
+                    <span id="busuanzi_container_site_pv">
+                        &nbsp; <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                </div>
+                <div class="intro">Me:北邮学生
                     <button id='trigger'>
                         🐶
                     </button>
+                </div>
             </div>
-        </div>
         <div class="nav">
             <a href="aboutMe.html" class="item">关于我</a>
             <a href="contact.html" class="item">联系我</a>
@@ -37,7 +41,7 @@
         <div class="tag-list">
                 <a href="share.html" class="item">实用工具分享</a>
                 <a href="#" class="item">烂笔头</a>
-                <a href="article.html" class="item">踩过的坑</a>
+                <a href="article1.html" class="item">踩过的坑</a>
         </div>
     </div>
     <div class="main">
@@ -45,7 +49,7 @@
             <div class="item">
                 <h1 class="title">1.搭建个人博客</h1>
                 <div class="status">
-                    <span class="badge badge-danger"> 发布于:2019-7-27 </span>
+                    <span class="badge badge-danger"> 发布于:2019-8-29 </span>
                     <span class="badge badge-warning"> 阅读: 
                         <span id="busuanzi_container_page_pv">
                             <span id="busuanzi_value_page_pv"></span>
@@ -178,17 +182,18 @@
                             <div class="code">
                                 &nbsp; 主题名/source/js  路径下！
                             </div>
-                            这一步完成之后，老规矩先用本地服务器验证一下(还是那三步)，你应该会惊喜地发现进入网站后应该停留了一下然后马上就跳转到了自己的网页
+                            这一步完成之后，老规矩先用本地服务器验证一下(还是那三步)，你应该会惊喜地发现进入网站后应该停留了一下然后马上就跳转到了自己的网页 <br>
                             (虽然有点像钓鱼网站的说...不过好歹也实现了完整地搭建自己的原生博客！！！) <br>
                             恭喜！！！
                         </div >
                 </div>
                 <ul class="pager">
-                        <a href="#">上一页</a>
-                        <a href="#">下一页</a>
-                    </ul>
+                        <a href="#" class="front">上一页</a>
+                        <div class="cur_page"></div>
+                        <a href="#" class="next">下一页</a>
+                </ul>
                 <div class="pager">
-                    <input id="jump" type="text" placeholder="去其他页瞅瞅">
+                    <input id="jump" type="text" value="" placeholder="去其他页瞅瞅">
                     <button id="jump-trigger">
                         <img class="nobigger" src="img/jump.png" alt="图挂了💀">
                     </button>

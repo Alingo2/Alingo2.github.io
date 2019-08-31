@@ -18,12 +18,16 @@
         <input id="menu-checkbox" type="checkbox">  
         <div class="header">
         <a href="index.html" class="logo" id="logo-active">Alingo</a>
-        <abbr title="一只小菜鸡的博客">
             <div class="portrait">
+                <abbr title="一只小菜鸡的博客">
                 <img src="img/portait.png" alt="图挂了💀">
+                </abbr>
+                <div class="visited">访问过的小伙伴:</div>
+                <span id="busuanzi_container_site_pv">
+                    &nbsp; <span id="busuanzi_value_site_pv"></span>
+                </span>
             </div>
-        </abbr>
-            <div class="intro">Now:北邮学生
+            <div class="intro">Me:北邮学生
                 <button id='trigger'>
                     🐶
                 </button>
@@ -37,13 +41,13 @@
         <div class="tag-list">
                 <a href="share.html" class="item">实用工具分享</a>
                 <a href="#" class="item">烂笔头</a>
-                <a href="article.html" class="item">踩过的坑</a>
+                <a href="article1.html" class="item">踩过的坑</a>
         </div>
     </div>
     <div class="main">
         <div class="article-list">
             <div class="item">
-                <a href="article.html" class="title">1.搭建个人博客</a>
+                <a href="article1.html" class="title">1.搭建个人博客</a>
                 <div class="status">
                     <span class="badge badge-danger"> 发布于:2019-8-29 </span>
                     <span class="badge badge-warning"> 阅读: 
@@ -59,30 +63,31 @@
                     下面我将分5步向大家介绍一下如何搭建自己的博客<br>
                     内容概览：<br>
                     <div class="poisioning pager">
-                        <a href="article.html#PassageOnePartOne">1. 前置工作</a>
+                        <a href="article1.html#PassageOnePartOne">1. 前置工作</a>
                     </div>
                     <div class="poisioning pager">
-                        <a href="article.html#PassageOnePartTwo">2. 配置hexo</a>
+                        <a href="article1.html#PassageOnePartTwo">2. 配置hexo</a>
                     </div>
                     <div class="poisioning pager">
-                        <a href="article.html#PassageOnePartThree">3. 修改主题</a>
+                        <a href="article1.html#PassageOnePartThree">3. 修改主题</a>
                     </div>
                     <div class="poisioning pager">
-                        <a href="article.html#PassageOnePartFour">4. 上传自己的html js css文件</a>
+                        <a href="article1.html#PassageOnePartFour">4. 上传自己的html js css文件</a>
                     </div>
                     <div class="poisioning pager">
-                        <a href="article.html#PassageOnePartFive">5. 将hexo主页直接跳转到自己的html网页上</a>
+                        <a href="article1.html#PassageOnePartFive">5. 将hexo主页直接跳转到自己的html网页上</a>
                     </div>
                     ......
                     <div class="seemore">
-                        <a class="seemore" href="article.html">(查看全文)</a>
+                        <a class="seemore" href="article1.html">(查看全文)</a>
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <!--<div class="container">
                 <ul class="pager">
-                    <a href="#">上一页</a>
-                    <a href="#">下一页</a>
+                    <a href="#" class="front">上一页</a>
+                    <div class="cur_page"></div>
+                    <a href="#" class="next">下一页</a>
                 </ul>
                 <div class="pager">
                         <input id="jump" type="text" placeholder="去其他页瞅瞅">
@@ -91,7 +96,7 @@
                         </button>
                         <label for="jump-trigger">跳转</label>
                 </div>
-            </div>
+            </div> -->
         </div>
         <footer>
             <div id="show"></div>

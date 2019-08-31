@@ -36,7 +36,9 @@ a, body
 }
 
 .side-bar .nav a,
-.side-bar .tag-list a
+.side-bar .tag-list a,
+.visited,
+.intro
 {
     display: block;     /*占一整行*/
     padding: 5px;
@@ -44,7 +46,9 @@ a, body
     transition: color 500ms;
 }
 .side-bar .nav a:hover,
-.side-bar .tag-list a:hover
+.side-bar .tag-list a:hover,
+.visited:hover,
+.intro:hover
 {
     color: #eee;
     font-weight: 600;
@@ -235,4 +239,13 @@ footer
     background: #595959;
     color: #fff;
     font-size: 22px;
+}
+.cur_page{
+    display: inline;
+    padding: 10px;
+}
+.visited,
+.intro{
+    display: block;
+    font-weight: 600;
 }
