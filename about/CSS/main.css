@@ -3,10 +3,8 @@
 }
 body
 {
-    background: #454545;
     line-height: 1.7;
 }
-
 a
 {
     text-decoration: none;
@@ -81,14 +79,27 @@ a, body
     color: rgba(238, 238, 238, 0.555);
     transition: color 400ms;
 }
+.logo{
+    background:rgba(119, 119, 119, 0.2) !important;
+}
 .header .logo:hover
 {
     color:#fff;
     text-decoration: underline;
 }
+.header,
+.nav,
+.tag-list
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
+}
+.header{
+    margin-top: 10px;
+}
 .article-list, .article
 {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
     margin-right: 30%;
     padding: 20px 30px;
     box-shadow: 0 0 3px 2px rgba(0,0,0,0.2);
@@ -253,4 +264,51 @@ footer
     width: 47px;
     height: 47px;
     padding: 5px;
+}
+
+
+
+
+
+.logo {
+	background:#454545;
+    color:#fff;
+	border:none;
+	position:relative;
+	height:60px;
+	font-size:1.6em;
+	padding:0 2em;
+	cursor:pointer;
+	transition:800ms ease all;
+	outline:none;
+}
+.logo:hover {
+	background:#333;
+	color:#fff;
+}
+.logo:before,.logo:after {
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	height:2px;
+	width:0;
+	background:#fff;
+	transition:400ms ease all;
+}
+.logo:after {
+	right:inherit;
+	top:inherit;
+	left:0;
+	bottom:0;
+}
+.logo:hover:before,.logo:hover:after {
+	width:100%;
+	transition:800ms ease all;
+}
+
+.bg{
+    background-size: cover;
+    position: absolute;
+    background-attachment: fixed;
 }

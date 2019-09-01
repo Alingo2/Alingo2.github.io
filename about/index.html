@@ -11,7 +11,7 @@
     <link rel="icon" href="img/portait.png" type="image/x-icon"/>
     <title>Alingo</title>
 </head>
-<body>
+<body background="img/background.jpg" class="bg">
     <script type="text/javascript">var OriginTitile=document.title,st;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="点开来康康嘛🙈~",clearTimeout(st)):(document.title="(๑•̀ㅂ•́)✧～",st=setTimeout(function(){document.title=OriginTitile},3e3))})</script>
     <div class="side-bar">
         <label id="menu-toggle" for="menu-checkbox">菜单
@@ -61,7 +61,7 @@
                 </div>
                 <div class="content">
                     如果按时间记录的话，第一个要分享的当然就是搭建自己的专属博客啦~<br>
-                    现在流行的博客框架有不少，我选择的是hexo（配置过程十分简单，并且使用的人很多，可以排不少坑，还有多种主题可以选择）<br>
+                    现在流行的博客框架有不少，我选择的是hexo(配置过程十分简单，并且使用的人很多，可以排不少坑，还有多种主题可以选择)<br>
                     下面我将分5步向大家介绍一下如何搭建自己的博客<br>
                     内容概览：<br>
                     <div class="poisioning pager">
@@ -85,6 +85,26 @@
                     </div>
                 </div>
             </div>
+            <div class="item">
+                <a href="article2.html" class="title">2.个人博客美化</a>
+                <div class="status">
+                    <span class="badge badge-danger"> 发布于:2019-9-01 </span>
+                    <span class="badge badge-warning"> 阅读: 
+                        <span id="busuanzi_container_page_pv">
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                    <span class="badge badge-success"> 标签:#排坑 </span>
+                </div>
+                <div class="content">
+                    1.为你的博客添加免费评论插件gitalk
+                    ......
+                    <div class="seemore">
+                        <a class="seemore" href="article2.html">(查看全文)</a>
+                    </div>
+                </div>
+            </div>
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde provident architecto alias veritatis quae, nisi quisquam? Non in fugiat blanditiis maxime consectetur, esse omnis mollitia doloribus facere iusto praesentium nostrum.</div>
             <!--<div class="container">
                 <ul class="pager">
                     <a href="#" class="front">上一页</a>
@@ -131,10 +151,9 @@
             </div>
         </footer>
     </div>
-    <script src="jQuery.js"></script>
-    <script src="main.js"></script>
-    <script async src="busuanzi.js"></script>
-    <script src="gitalk.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script async src="js/busuanzi.js"></script>
+    <script src="js/main.js"></script>
     <script src="//code.tidio.co/4o2osqb8i2nvpqo3ypfaizyqgdcedkvs.js"></script>
 </body>
 </html>
