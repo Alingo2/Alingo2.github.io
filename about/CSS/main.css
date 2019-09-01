@@ -221,7 +221,7 @@ footer
 }
 
 #trigger{
-    background-color: #454545;
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 17px;
 }
 
