@@ -1,1 +1,1 @@
-window.location.href="about/index.html";
+window.location.href="about/html/index.html";
