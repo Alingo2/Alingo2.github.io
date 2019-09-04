@@ -187,6 +187,9 @@ footer
     text-decoration: none;
     color: #888;
 }
+.article-list{
+    margin-bottom: 12px;
+}
 .pager
 {
     text-align: center;
@@ -241,12 +244,12 @@ footer
     text-align: left;
 }
 .subtitle{
-    background: #454545;
+    background: rgba(31, 31, 31, 0.85);
     color: #eee;
     font-size: 25px;
 }
 .code{
-    background: #595959;
+    background: rgba(31, 31, 31, 0.65);
     color: #fff;
     font-size: 22px;
 }
@@ -260,13 +263,14 @@ footer
     font-weight: 600;
 }
 .sm-icon{
-    width: 30px;
+    width: 29px;
     height: 30px;
-    padding: 5px;
+    padding: 6px;
 }
-
-
-
+.icon-list > a:hover{
+    background: rgba(173, 173, 173, 0.2);
+    border-radius: 5px;
+}
 
 
 .logo {
