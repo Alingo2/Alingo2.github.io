@@ -272,6 +272,13 @@ footer
     border-radius: 5px;
 }
 
+.art_img{
+    padding: 12px;
+    opacity:0.95;
+}
+.incident{
+    padding: 70px 30px;
+}
 
 .logo {
 	background:#454545;

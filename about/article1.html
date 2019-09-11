@@ -48,14 +48,14 @@
                 </div>
             </div>
         <div class="nav">
-            <a href="aboutMe.html" class="item">关于我</a>
-            <a href="contact.html" class="item">联系我</a>
-            <a href="donation.html" class="item">捐助我</a>
-            <a href="share.html" class="item">实用工具分享</a>
+            <a href="html/aboutMe.html" class="item">关于我</a>
+            <a href="html/contact.html" class="item">联系我</a>
+            <a href="html/donation.html" class="item">捐助我</a>
+            <a href="html/share.html" class="item">实用工具分享</a>
             <a href="#" class="item">烂笔头</a>
-            <a href="../article1.html" class="item">踩过的坑</a>
-            <a href="../history.html" class="item">大事记</a>
-            <a href="../tag.html" class="item">归档</a>
+            <a href="article1.html" class="item">踩过的坑</a>
+            <a href="html/history.html" class="item">大事记</a>
+            <a href="html/tag.html" class="item">归档</a>
         </div>
     </div>
     <div class="main">
@@ -88,6 +88,7 @@
                             </div>
                             首先，你需要准备好1个github账号，并在电脑上安装完成 node.js<br>
                             Next,在github上新建一个名为 你的用户名.github.io的仓库，比如说，如果我的github用户名是Alingo2，那么你就新建ALingo2.github.io的仓库（必须是你的用户名，其它名称无效）
+                            <img src="img/art1/art1_1.png" class="art_img" alt="图挂了💀">
                         </div>
                         <div class="poisioning pager" id="PassageOnePartTwo">
                             <div class="subtitle">
@@ -112,6 +113,7 @@
                             repo: https://github.com/YourgithubName/YourgithubName.github.io.git<br>
                             branch: master<br>
                             (YourgithubName就是你的GitHub账户)
+                            <img src="img/art1/art1_2.png" class="art_img" alt="图挂了💀"><br>
                             这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。<br>
                             在cmd中键入指令: npm install hexo-deployer-git --save<br>
                             然后键入：<br>
@@ -161,10 +163,12 @@
                             </div>
                             其中，'你的文件夹'用你自己的文件夹替代，'/**代表skip跳过渲染该文件夹下所有文件及子目录'(如果有另外的需求可以去查一下hexo skip_render规则)
                             例如，我就填入的'about/**' <br>
+                            <img src="img/art1/art1_3.png" class="art_img" alt="图挂了💀"><br>
                             好了，现在我们就可以大胆地把js css html等等文件都放进去了~ <br>
                             下一步，已经有了网页了，现在我们需要将我们的网页链接到hexo生成的主页上去 <br>
                             找到theme目录，用文本编辑器打开你之前配置的主题文件夹中的_config.yml文件，在menu那一栏下添加：about: /about/index.html
                             (因为我添加的文件夹名为about,我需要链接的网页为index.html) <br>
+                            <img src="img/art1/art1_4.png" class="art_img" alt="图挂了💀"><br>
                             添加完成后，老规矩，三板斧: <br>
                             hexo clean <br>
                             hexo g <br>
