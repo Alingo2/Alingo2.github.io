@@ -38,7 +38,7 @@ a, body
 .intro
 {
     display: block;     /*占一整行*/
-    padding: 5px;
+    padding: 4.5px;
     color: rgb(165, 165, 165);
     transition: color 500ms;
 }
