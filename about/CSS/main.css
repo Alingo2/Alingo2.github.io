@@ -280,6 +280,10 @@ footer
     padding: 70px 30px;
 }
 
+.bigpic{
+    max-width: 100%;
+}
+
 .logo {
 	background:#454545;
     color:#fff;

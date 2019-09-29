@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://alingo2.github.io/"/>
+  <link href="http://yoursite.com/"/>
   <updated>2019-08-29T03:10:13.331Z</updated>
-  <id>https://alingo2.github.io/</id>
+  <id>http://yoursite.com/</id>
   
   <author>
     <name>Alingo</name>
@@ -17,9 +17,9 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://alingo2.github.io/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
-    <id>https://alingo2.github.io/</id>
+    <title>我的第一篇博客文章</title>
+    <link href="http://yoursite.com/2019/08/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
+    <id>http://yoursite.com/2019/08/27/我的第一篇博客文章/</id>
     <published>2019-08-27T12:28:16.000Z</published>
     <updated>2019-08-29T03:10:13.331Z</updated>
     
